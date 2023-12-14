@@ -11,7 +11,7 @@ static void compute(float *setpoint, float *feedback, PID *self);
 
 PID *initialize(float Kp, float Ki, float Kd, uint32_t ts, float out_min, float out_max){
 	PID *self;
-	self = malloc(sizeof(self));
+	self = (PID*)malloc(sizeof(PID));
 	self->kp = Kp;
 	self->ki = Ki;
 	self->kd = Kd;
