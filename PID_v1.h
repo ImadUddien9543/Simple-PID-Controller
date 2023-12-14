@@ -24,7 +24,7 @@ typedef struct _PID_{
 	void(*compute)(float*, float*, struct _PID_*);
 } PID;
 
-PID *initialize(float Kp, float Ki, float Kd, uint32_t ts, float out_min, float out_max);
+extern PID *initialize(float Kp, float Ki, float Kd, uint32_t ts, float out_min, float out_max);
 
 
 
