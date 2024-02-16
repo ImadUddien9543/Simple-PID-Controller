@@ -1,4 +1,4 @@
-# usage:
+# Example Usage:
 ```
 #include "PID_v1.h"
 
